@@ -334,3 +334,73 @@ text-align:center;
 }
 
 }
+/* ==========================
+        HERO IMAGE
+========================== */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+
+}
+
+.hero-image{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:350px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #3B82F6;
+
+    box-shadow:0 0 50px rgba(59,130,246,.35);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 70px rgba(59,130,246,.55);
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:250px;
+height:250px;
+
+}
+
+}
